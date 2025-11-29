@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://bed.png" type="Texture" id=1]
+
+[node name="bed" type="StaticBody2D"]
+
+[node name="bed" type="CollisionPolygon2D" parent="."]
+position = Vector2( -16, 0 )
+scale = Vector2( 1.125, 1 )
+polygon = PoolVector2Array( 108, 20, 106.667, 72, 149.333, 72, 148, 16, 108, 16 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 448, 320 )
+texture = ExtResource( 1 )

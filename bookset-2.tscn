@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://bookset-2.png" type="Texture" id=1]
+
+[node name="bookset-2" type="StaticBody2D"]
+
+[node name="bookset2" type="CollisionPolygon2D" parent="."]
+position = Vector2( 0, -192 )
+polygon = PoolVector2Array( 4, 172, 28, 172, 100, 172, 108, 188, 120, 188, 120, 212, 52, 212, 52, 200, 0, 200 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 72, -4 )
+texture = ExtResource( 1 )

@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://compartment.png" type="Texture" id=1]
+
+[node name="compartment" type="StaticBody2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -202, 56 )
+polygon = PoolVector2Array( 348, -78, 352, -68, 442, -68, 442, -80 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( -202, 56 )
+texture = ExtResource( 1 )

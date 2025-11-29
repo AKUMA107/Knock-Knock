@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/[FREE FOR PROFIT] INDIAN TYPE BEAT - CHILLUM CHILL  INDIAN RAP BEAT 2023.mp3-721b1ddde3687532018ce2fd3926c359.mp3str"
+
+[deps]
+
+source_file="res://ResourcesFortheGamt/ResourcesFortheGamt/Audio/[FREE FOR PROFIT] INDIAN TYPE BEAT - CHILLUM CHILL  INDIAN RAP BEAT 2023.mp3"
+dest_files=[ "res://.import/[FREE FOR PROFIT] INDIAN TYPE BEAT - CHILLUM CHILL  INDIAN RAP BEAT 2023.mp3-721b1ddde3687532018ce2fd3926c359.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

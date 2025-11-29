@@ -1,0 +1,35 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://HUD.tscn" type="PackedScene" id=1]
+[ext_resource path="res://holyslash.tscn" type="PackedScene" id=2]
+[ext_resource path="res://FightMenu.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://slash.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Minecraft.ttf" type="DynamicFontData" id=6]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 6 )
+
+[node name="player_things" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource( 4 )]
+position = Vector2( 448, 608 )
+
+[node name="slash" parent="Player" instance=ExtResource( 5 )]
+
+[node name="FightMenu" parent="Player" instance=ExtResource( 3 )]
+z_index = 17
+
+[node name="holyslash" parent="Player" instance=ExtResource( 2 )]
+
+[node name="HUD" parent="Player" instance=ExtResource( 1 )]
+position = Vector2( -243.952, -137.886 )
+
+[node name="Label" type="Label" parent="Player"]
+margin_left = -141.327
+margin_top = 111.385
+margin_right = 205.673
+margin_bottom = 127.385
+rect_scale = Vector2( 0.742293, 0.797061 )
+custom_fonts/font = SubResource( 1 )
+text = "*YOU ARE DEFINITELY GETTING AMBUSHED"

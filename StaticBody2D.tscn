@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://kitchenstuff.png" type="Texture" id=1]
+
+[node name="StaticBody2D" type="StaticBody2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2( -4, -366 )
+polygon = PoolVector2Array( 132, 380, 28, 380, 28, 314, 0, 312, 0, 414, 132, 416 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 444, -46 )
+texture = ExtResource( 1 )

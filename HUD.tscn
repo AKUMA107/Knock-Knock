@@ -1,0 +1,91 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://HealthBar.py" type="Script" id=1]
+[ext_resource path="res://healthbar_progress.png" type="Texture" id=2]
+[ext_resource path="res://healthbar.png" type="Texture" id=3]
+[ext_resource path="res://HealthBar2.py" type="Script" id=4]
+[ext_resource path="res://Minecraft.ttf" type="DynamicFontData" id=5]
+[ext_resource path="res://Slash Uses.py" type="Script" id=6]
+[ext_resource path="res://health.py" type="Script" id=7]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=2]
+font_data = ExtResource( 5 )
+
+[sub_resource type="DynamicFont" id=3]
+font_data = ExtResource( 5 )
+
+[node name="HUD" type="Node2D"]
+z_index = 16
+
+[node name="HealthBar" type="TextureProgress" parent="."]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 200.0
+margin_bottom = 24.0
+value = 100.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 2 )
+tint_over = Color( 0.423529, 0.423529, 0.423529, 1 )
+nine_patch_stretch = true
+stretch_margin_left = 16
+stretch_margin_right = 16
+script = ExtResource( 1 )
+
+[node name="HealthBar2" type="TextureProgress" parent="."]
+margin_left = 8.0
+margin_top = 24.0
+margin_right = 112.0
+margin_bottom = 40.0
+max_value = 5.0
+texture_under = ExtResource( 3 )
+texture_progress = ExtResource( 2 )
+tint_over = Color( 0.423529, 0.423529, 0.423529, 1 )
+tint_progress = Color( 0, 0.996078, 1, 1 )
+nine_patch_stretch = true
+stretch_margin_left = 16
+stretch_margin_right = 16
+script = ExtResource( 4 )
+
+[node name="slash_uses" type="Label" parent="."]
+margin_left = 114.0
+margin_top = 26.0
+margin_right = 130.0
+margin_bottom = 42.0
+custom_fonts/font = SubResource( 1 )
+text = "10"
+script = ExtResource( 6 )
+
+[node name="health" type="Label" parent="."]
+margin_left = 204.0
+margin_top = 9.0
+margin_right = 244.0
+margin_bottom = 25.0
+custom_fonts/font = SubResource( 2 )
+text = "1"
+script = ExtResource( 7 )
+
+[node name="fightmenu prelude" type="Sprite" parent="."]
+position = Vector2( 464, 120 )
+rotation = 1.57181
+z_index = 9
+texture = ExtResource( 3 )
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2( 0, -1 )
+scale = Vector2( 1.00171, 0.996156 )
+z_index = 18
+
+[node name="Label" type="Label" parent="Node2D"]
+margin_left = 460.214
+margin_top = 108.417
+margin_right = 500.214
+margin_bottom = 162.417
+rect_scale = Vector2( 0.670322, 0.540054 )
+custom_colors/font_color = Color( 0.596078, 0.411765, 0.411765, 1 )
+custom_fonts/font = SubResource( 3 )
+text = "T
+a
+b"

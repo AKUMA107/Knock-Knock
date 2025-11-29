@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://FightMenu.png" type="Texture" id=1]
+[ext_resource path="res://FightMenu.py" type="Script" id=2]
+
+[node name="FightMenu" type="Node2D"]
+z_index = 4
+
+[node name="FightMenu" type="Sprite" parent="."]
+position = Vector2( 160, 0 )
+z_index = 40
+texture = ExtResource( 1 )
+script = ExtResource( 2 )

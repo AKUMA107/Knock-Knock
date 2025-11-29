@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/[FREE] ukulele Joji x Trippie Redd Type Beat - _missing u_.mp3-4a48476e1bf8d17a884a5fc0f901c093.mp3str"
+
+[deps]
+
+source_file="res://ResourcesFortheGamt/ResourcesFortheGamt/Audio/[FREE] ukulele Joji x Trippie Redd Type Beat - _missing u_.mp3"
+dest_files=[ "res://.import/[FREE] ukulele Joji x Trippie Redd Type Beat - _missing u_.mp3-4a48476e1bf8d17a884a5fc0f901c093.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

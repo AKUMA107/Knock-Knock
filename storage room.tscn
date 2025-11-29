@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://storageroom.png" type="Texture" id=1]
+
+[node name="storage room" type="StaticBody2D"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 274.415, 25.9399, 282.876, 43.2084, 558.866, 41.6192, 560.455, 28.3759, 563.634, 35.2624, 625.612, 34.203, 633.518, 24.6446, 633.165, 0.602997 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 456.515, 317.692 )
+texture = ExtResource( 1 )
